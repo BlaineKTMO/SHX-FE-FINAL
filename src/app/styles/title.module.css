@@ -1,14 +1,24 @@
 .titlebar {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background: #ffffff; /* Solid warm background color */
+  padding: 30px; /* Increase padding */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  border-radius: 15px; /* More rounded corners */
   text-align: center;
-  margin: 20px;
+  margin: 25px; /* Increase margin */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
 }
 
-.title-bar h1 {
+.titlebar h1 {
   margin: 0;
-  font-size: 24px;
-  font-family: var(--font-geist-sans);
+  font-size: 32px; /* Larger font size */
+  font-family: 'Poppins', sans-serif; /* Modern and lively font */
+  color: #333; /* Dark grey text color */
+  letter-spacing: 1.5px; /* Add letter spacing */
+}
+
+.titlebar p {
+  margin: 10px 0 0; /* Margin for paragraph */
+  font-size: 18px; /* Font size for paragraph */
+  font-family: 'Poppins', sans-serif; /* Matching font for paragraph */
+  color: #666; /* Lighter grey text color */
 }
