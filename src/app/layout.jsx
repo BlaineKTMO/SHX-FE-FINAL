@@ -4,6 +4,8 @@ import TitleBar from "./components/title";
 import DevicesContainer from "./components/DeviceBox";
 import DevicesList from "./components/DevicesList";
 import AddDeviceForm from "./components/AddDeviceForm";
+import SignInForm from "./components/SignInForm";
+import CreateUserForm from "./components/CreateUserForm";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,8 @@ export default function RootLayout({ children }) {
         <TitleBar title="Welcome to ReTrain!" />
         <DevicesList /> 
         <AddDeviceForm />
+        <SignInForm />
+        <CreateUserForm />
         {children}
       </body>
     </html>
