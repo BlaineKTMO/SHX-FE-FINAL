@@ -1,0 +1,31 @@
+/* styles/SignOutButton.module.css */
+.signOutButton {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    padding: 8px 16px; /* Adjust padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    margin-left: auto; /* Push the button to the right */
+  }
+  
+  .signOutButton:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  /* Hide the sign-out button on smaller screens */
+  @media (max-width: 1024px) {
+    .signOutButton {
+      display: none;
+    }
+  }
+  
+  /* Show the sign-out button on larger screens */
+  @media (min-width: 1025px) {
+    .signOutButton {
+      display: inline-block;
+    }
+  }

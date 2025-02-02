@@ -1,12 +1,15 @@
-import React from 'react';
+// components/title.js
+'use client';
+import SignOutButton from './SignOutButton';
 import styles from '../styles/title.module.css';
 
-const TitleBar = ({ title }) => {
+export default function TitleBar({ title, onSignOut }) {
   return (
-    <div className={styles.titlebar}>
+    <div className={styles.titleBar}>
       <h1>{title}</h1>
+      <div className={styles.signOutButtonContainer}>
+        <SignOutButton onSignOut={onSignOut} />
+      </div>
     </div>
   );
-};
-
-export default TitleBar;
+}

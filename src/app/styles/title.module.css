@@ -1,24 +1,32 @@
-.titlebar {
-  background: #ffffff; /* Solid warm background color */
-  padding: 30px; /* Increase padding */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
-  border-radius: 15px; /* More rounded corners */
-  text-align: center;
-  margin: 25px; /* Increase margin */
-  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+/* styles/title.module.css */
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the title text */
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+  padding: 20px 30px; /* Adjust padding */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  margin-bottom: 20px; /* Space below the title bar */
+  position: relative; /* Position relative to place the sign-out button */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.titlebar h1 {
+.titleBar:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.titleBar h1 {
   margin: 0;
-  font-size: 32px; /* Larger font size */
-  font-family: 'Poppins', sans-serif; /* Modern and lively font */
-  color: #333; /* Dark grey text color */
-  letter-spacing: 1.5px; /* Add letter spacing */
+  font-size: 28px; /* Adjust font size */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-weight: 600; /* Bold font weight */
+  color: #ffffff; /* White text color */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
 }
 
-.titlebar p {
-  margin: 10px 0 0; /* Margin for paragraph */
-  font-size: 18px; /* Font size for paragraph */
-  font-family: 'Poppins', sans-serif; /* Matching font for paragraph */
-  color: #666; /* Lighter grey text color */
+.signOutButtonContainer {
+  position: absolute;
+  right: 30px; /* Adjust right position to match padding */
 }

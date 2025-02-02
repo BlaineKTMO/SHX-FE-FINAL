@@ -1,37 +1,43 @@
-// app/components/SignInForm.jsx
 'use client';
 import { useState } from 'react';
-import { signIn } from '../utils/api';
+import { useRouter } from 'next/router';
+import styles from '../styles/SignInForm.module.css';
 
-export default function SignInForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function SignInForm({ onLogin }) {
+  const [email, setEmail] = useState('Hello@gmail.com');
+  const [password, setPassword] = useState('Hello');
+  // const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const user = await signIn(email, password);
-      console.log('Signed in:', user);
-    } catch (error) {
-      console.error('Error signing in:', error);
+    // Implement your authentication logic here
+    if (email === 'Hello@gmail.com' && password === 'Hello') {
+      onLogin(); // Call the onLogin function to navigate to the main page
+      router.push('/main'); // Navigate to the main page
+    } else {
+      alert('Invalid credentials');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.SignInForm}>
       <input
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        className={styles.inputField}
+        required
       />
       <input
         type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        className={styles.inputField}
+        required
       />
-      <button type="submit">Sign In</button>
+      <button type="submit" className={styles.submitButton}>Sign In</button>
     </form>
   );
 }

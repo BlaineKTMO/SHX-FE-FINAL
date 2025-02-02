@@ -1,0 +1,96 @@
+/* styles/LoginPage.module.css */
+.LoginPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .companyNameBackground {
+    position: absolute;
+    top: 25%; /* Move to 3/4 proportion of the screen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw; /* Scale the font size relative to the viewport width */
+    font-weight: 900; /* Bold font weight */
+    color: rgba(255, 255, 255, 0.5); /* Whiter text with low opacity */
+    z-index: 1;
+    pointer-events: none; /* Make it non-interactive */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-family: 'Quicksand', sans-serif; /* Rounded font */
+    overflow: hidden; /* Hide the overflow for typing effect */
+    border-right: 0.15em solid rgba(255, 255, 255, 0.2); /* Cursor effect */
+    animation: typing 4s steps(10, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(255, 255, 255, 0.2); }
+  }
+  
+  @keyframes typing-fade-out {
+    0% { border-right: 0.15em solid rgba(255, 255, 255, 0.2); }
+    100% { border-right: none; }
+  }
+  
+  .companyNameBackground.typing-complete {
+    animation: typing 4s steps(10, end), blink-caret 0.75s step-end infinite, typing-fade-out 0.5s forwards;
+  }
+  
+  .LoginForm {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 40px; /* Adjust padding */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    max-width: 500px; /* Adjust max width */
+    width: 100%; /* Full width */
+    z-index: 2; /* Ensure it is above the background text */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin-top: 50px; /* Move the form down a bit */
+  }
+  
+  .LoginForm:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  }
+  
+  .inputField {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 16px; /* Increase padding */
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Larger font size */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  .inputField:focus {
+    border-color: #6a11cb; /* Border color matching the gradient */
+    outline: none; /* Remove default outline */
+  }
+  
+  .submitButton {
+    background-color: #6a11cb; /* Gradient start color */
+    color: white; /* White text */
+    padding: 16px 24px; /* Increase padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .submitButton:hover {
+    background-color: #2575fc; /* Gradient end color */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }

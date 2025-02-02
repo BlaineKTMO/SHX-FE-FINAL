@@ -1,0 +1,42 @@
+.SignInForm {
+    background: #f9f9f9; /* Light grey background */
+    padding: 30px; /* Increase padding */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    max-width: 400px; /* Max width */
+    margin: 50px auto; /* Center the form */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    color: #333; /* Dark grey text color */
+  }
+  
+  .inputField {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 12px; /* Increase padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  .inputField:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .submitButton {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 12px 20px; /* Increase padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
