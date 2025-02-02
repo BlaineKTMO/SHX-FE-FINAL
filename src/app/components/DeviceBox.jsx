@@ -2,6 +2,7 @@
 'use client';
 import useDeviceStore from './stores/deviceStore';
 import styles from '../styles/DeviceBox.module.css'; // Import CSS module
+import TriggerApiRequest from './TriggerApiRequest';
 
 export default function DeviceBox({ id, name, ip, status }) {
   const deleteDevice = useDeviceStore((state) => state.deleteDevice);
@@ -25,6 +26,7 @@ export default function DeviceBox({ id, name, ip, status }) {
       >
         Delete
       </button>
+      <TriggerApiRequest/>
     </div>
   );
 }

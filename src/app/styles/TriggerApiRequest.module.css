@@ -1,0 +1,23 @@
+/* styles/TriggerApiRequest.module.css */
+.triggerApiRequest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .triggerButton {
+    background-color: #6a11cb; /* Gradient start color */
+    color: white; /* White text */
+    padding: 12px 24px; /* Increase padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .triggerButton:hover {
+    background-color: #2575fc; /* Gradient end color */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }

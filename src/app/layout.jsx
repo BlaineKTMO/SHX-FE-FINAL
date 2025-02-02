@@ -5,8 +5,6 @@ import "./globals.css";
 import TitleBar from "./components/title";
 import DevicesList from "./components/DevicesList";
 import AddDeviceForm from "./components/AddDeviceForm";
-import SignInForm from "./components/SignInForm";
-import CreateUserForm from "./components/CreateUserForm";
 import LoginPage from "./components/LoginPage";
 import { useState } from "react";
 
@@ -39,9 +37,6 @@ export default function RootLayout({ children }) {
             <TitleBar title="Welcome to ReTrain!" onSignOut={handleSignOut} />
             <DevicesList />
             <AddDeviceForm />
-            <SignInForm />
-            <CreateUserForm />
-            {children}
           </>
         ) : (
           <LoginPage onLogin={handleLogin} />

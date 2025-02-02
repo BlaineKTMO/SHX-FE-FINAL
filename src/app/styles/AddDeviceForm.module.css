@@ -1,48 +1,49 @@
+/* styles/AddDeviceForm.module.css */
 .AddDeviceForm {
-    background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Gradient background */
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
-    padding: 25px; /* Increase padding */
-    max-width: 600px; /* Increase max width */
-    margin: 20px auto; /* Center the form with some margin */
-    font-family: 'Arial', sans-serif; /* Modern font */
-    color: #333; /* Dark grey text color */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  }
-  
-  .AddDeviceForm:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
-  }
-  
-  .inputField {
-    border: 1px solid #ccc; /* Light grey border */
-    padding: 12px; /* Increase padding */
-    margin-bottom: 15px; /* Space between inputs */
-    border-radius: 8px; /* Rounded corners */
-    width: calc(100% - 26px); /* Full width minus padding */
-    box-sizing: border-box; /* Include padding in width */
-    font-size: 16px; /* Larger font size */
-    transition: border-color 0.3s ease; /* Smooth border color transition */
-  }
-  
-  .inputField:focus {
-    border-color: #007bff; /* Blue border on focus */
-    outline: none; /* Remove default outline */
-  }
-  
-  .submitButton {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    padding: 12px 20px; /* Increase padding */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Larger font size */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
-  }
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  padding: 25px; /* Increase padding */
+  max-width: 600px; /* Increase max width */
+  margin: 20px auto; /* Center the form with some margin */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  color: #333; /* Dark grey text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.AddDeviceForm:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.inputField {
+  border: 1px solid #ccc; /* Light grey border */
+  padding: 12px; /* Increase padding */
+  margin-bottom: 15px; /* Space between inputs */
+  border-radius: 8px; /* Rounded corners */
+  width: calc(100% - 26px); /* Full width minus padding */
+  box-sizing: border-box; /* Include padding in width */
+  font-size: 16px; /* Larger font size */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.inputField:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submitButton {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 20px; /* Increase padding */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Larger font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}

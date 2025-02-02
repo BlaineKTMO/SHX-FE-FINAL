@@ -1,6 +1,6 @@
-/* app/components/DeviceBox.module.css */
+/* styles/DeviceBox.module.css */
 .deviceBox {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: #37231f;
   border-radius: 10px;
@@ -58,8 +58,4 @@
 
 .deleteButton:hover {
   background: #dc2626; /* red-600 */
-}
-
-.DevicesList {
-  background: rgb(235, 14, 14);
 }

@@ -2,6 +2,7 @@
 import AddDeviceForm from '../components/AddDeviceForm';
 import DevicesList from '../components/DevicesList';
 import SignOutButton from '../components/SignOutButton';
+import TriggerApiRequest from '../components/TriggerApiRequest';
 import styles from '../styles/MainPage.module.css'; // Import CSS module for main page
 
 export default function Main() {
@@ -13,6 +14,7 @@ export default function Main() {
       </div>
       <DevicesList />
       <AddDeviceForm />
+      <TriggerApiRequest /> {/* Include the TriggerApiRequest component */}
     </div>
   );
 }
