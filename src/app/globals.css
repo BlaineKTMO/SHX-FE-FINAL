@@ -43,7 +43,16 @@ a {
 
 /* app/globals.css */
 body {
-  font-family: var(--font-geist-sans), sans-serif;
-  background: #f9fafb; /* gray-50 */
-  color: #1f2937; /* gray-800 */
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #9d7aa9, #ffffff);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #f8f6f6, #9d7aa9);
+  }
 }
